@@ -6,7 +6,7 @@ public class TestJesqueAction implements JesqueAction<TestJesqueArgument> {
     private TestJesqueArgument arg;
 
     @Override
-    public String getQueueType() {
+    public String getQueueName() {
         return "test-queue";
     }
 

@@ -11,7 +11,7 @@ public class JesqueQueuer<T extends JesqueArgument, Y extends JesqueAction<T>> {
         this.jesqueClient = jesqueClient;
 
         final JesqueAction action = actionClass.newInstance();
-        queueType = action.getQueueType();
+        queueType = action.getQueueName();
     }
 
     public void enqueue(final T argument) {

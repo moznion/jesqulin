@@ -38,7 +38,7 @@ public class JesqueQueuerTest {
     public void shouldEnqueueSuccessfully() throws Exception {
         queuer.enqueue(new TestJesqueArgument(123));
 
-        final String key = JesqueUtils.createKey("namespace", QUEUE, new TestJesqueAction().getQueueType());
+        final String key = JesqueUtils.createKey("namespace", QUEUE, new TestJesqueAction().getQueueName());
 
         try (final Jedis jedis = jesqueClient.getJedisPool().getResource()) {
             assertThat(jedis.llen(key)).isEqualTo(1);
