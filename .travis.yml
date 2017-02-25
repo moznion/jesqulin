@@ -3,5 +3,7 @@ jdk:
   - oraclejdk8
 install: ./mvnw install -DskipTests=true -Dgpg.skip=true
 script: ./mvnw test
+services:
+  - redis-server
 sudo: false
 
