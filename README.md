@@ -1,4 +1,4 @@
-jesqulin
+jesqulin [![Build Status](https://travis-ci.org/moznion/jesqulin.svg?branch=master)](https://travis-ci.org/moznion/jesqulin)
 ========
 
 A framework to provide a safe way to use [Jesque](https://github.com/gresrun/jesque).
