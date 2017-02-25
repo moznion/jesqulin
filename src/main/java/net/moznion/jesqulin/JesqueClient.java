@@ -2,6 +2,15 @@ package net.moznion.jesqulin;
 
 import net.greghaines.jesque.Job;
 
+/**
+ * A client class for Jesque.
+ */
 public interface JesqueClient {
-    void enqueue(String queueType, Job job);
+    /**
+     * Enqueues the job to specified queue.
+     *
+     * @param queueName The identifier of queue.
+     * @param job       The job to enqueue.
+     */
+    void enqueue(String queueName, Job job);
 }
